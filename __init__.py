@@ -98,13 +98,16 @@ class YoutubeMusicSkill(CommonPlaySkill):
                     self.vid_id = vid["videoId"]
                     self.watch_results = self.ytmusic.get_watch_playlist(self.vid_id, limit=100)["tracks"]
                     self.audioservice.play(stream_url)
-                    time.sleep(5000)
+                    time.sleep(1000)
                     self.handle_new_track()
-                # we didn't find anything
+                    return
                 else:
-                    self.speak_dialog('not.found', wait=True)
-                    self.log.debug('Could not find any results with the query term: ' + search_term)
-                break
+                    break
+
+        # we didn't find anything
+        self.speak_dialog('not.found', wait=True)
+        self.log.debug('Could not find any results with the query term: ' + search_term)
+                
     
     def handle_new_track(self, ignored=None):
         # if we don't have results or no vid id or the track number is already 100: quit
