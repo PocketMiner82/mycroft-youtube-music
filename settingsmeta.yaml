@@ -1,0 +1,10 @@
+skillMetadata:
+   sections:
+      - name: Authorization
+        fields:
+          - type: label
+            label: Paste your authorization headers here to login to YouTube Music. See <a href='https://ytmusicapi.readthedocs.io/en/stable/setup.html#copy-authentication-headers'>here</a> to learn how to copy the headers. Leave empty if you don't want to login.
+          - name: yt_auth_header
+            type: text
+            label: Authorization headers
+            value: ""
