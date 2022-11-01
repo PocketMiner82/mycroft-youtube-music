@@ -98,7 +98,7 @@ class YoutubeMusicSkill(CommonPlaySkill):
                     self.vid_id = vid["videoId"]
                     self.watch_results = self.ytmusic.get_watch_playlist(self.vid_id, limit=100)["tracks"]
                     self.audioservice.play(stream_url)
-                    time.sleep(1000)
+                    time.sleep(1)
                     self.handle_new_track()
                     return
                 else:
