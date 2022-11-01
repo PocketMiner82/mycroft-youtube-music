@@ -17,7 +17,7 @@ Based on https://github.com/elarion83/nico-youtube
 * "Resume"
 
 ## German
-If you have mycroft configured in german and your STT has problems understanding english song titles, you can ask to translate your query from german to english like this: "spiele ich werde dich niemals aufgeben auf englisch" and it will be translated to english before the search term gets passed to youtube.
+If you have mycroft configured in german and your STT has problems understanding english song titles, you can ask to translate your query from german to english like this: "spiele gebe dich nie auf auf englisch" and it will be translated to english before the search term gets passed to youtube.
 
 ## Tags
 #stream
