@@ -1,8 +1,8 @@
 # mycroft-youtube-music
-Play music from YouTube Music using your voice.
+Play music from YouTube Music using the Common Play Framework.
 
 ## Description
-Searches youtube music, plays first song and adds 100 songs from the youtube music watch playlist to the queue of the CommonPlay framework.<br>
+Searches youtube music, plays first song and adds 100 songs from the youtube music watch playlist to the queue of the Common Play Framework.<br>
 Based on https://github.com/elarion83/nico-youtube
 
 ## Category
